@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <SeekBar
+        android:layout_height="wrap_content"
+        android:layout_width="320dp"
+        android:layout_marginTop="150dp"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:progress="0"
+        android:padding="10dp"
+        android:max="60000"
+        android:id="@+id/playbarr"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_gravity="right"
+        android:paddingLeft="10dp"
+        android:id="@+id/text1"
+        android:layout_marginRight="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/play"
+            android:onClick="play"
+            android:text="시작"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tempPause"
+            android:onClick="tempPause"
+            android:text="일시중지"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/replay"
+            android:onClick="replay"
+            android:text="다시시작"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/stop"
+            android:onClick="stop"
+            android:text="중지"/>
+
+    </LinearLayout>
+
+</LinearLayout>
